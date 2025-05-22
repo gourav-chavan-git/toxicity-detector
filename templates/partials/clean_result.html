@@ -1,0 +1,11 @@
+{% if error %}
+    <div class="alert alert-danger">{{ error }}</div>
+{% else %}
+    <div class="mt-2">
+        <p><strong>Cleaned Comment:</strong></p>
+        <div class="alert alert-success">{{ clean_comment }}</div>
+
+        <p><strong>Paraphrased:</strong></p>
+        <div class="alert alert-info">{{ paraphrased_comment }}</div>
+    </div>
+{% endif %}

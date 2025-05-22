@@ -1,0 +1,13 @@
+{% if error %}
+    <div class="alert alert-danger">{{ error }}</div>
+{% else %}
+    <img id="wordcloud-img" src="data:image/png;base64,{{ wordcloud_image }}" alt="Word Cloud" class="img-fluid rounded shadow-sm">
+
+    <a id="download-btn" 
+       href="data:image/png;base64,{{ wordcloud_image }}" 
+       download="wordcloud.png" 
+       class="btn btn-primary mt-3">
+       Download Word Cloud
+    </a>
+{% endif %}
+
