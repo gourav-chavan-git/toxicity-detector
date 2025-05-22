@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: toxicity-detector
+    runtime: docker
+    plan: free
+    envVars:
+      - key: DJANGO_SECRET_KEY
+        value: "django-insecure-dzz6u!ytvfmab&z#^s%fdbc&fprtmcnw&p*hnm8pr20fpt+04&"
+      - key: DEBUG
+        value: "false"
+    ports:
+      - port: 8000
+
