@@ -27,7 +27,7 @@ SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', 'fallback-dev-key')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['your-service-name.onrender.com', 'localhost']
+ALLOWED_HOSTS = ['https://toxicity-detector-dqp8.onrender.com', 'localhost']
 
 
 # Application definition
